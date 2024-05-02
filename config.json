@@ -1,0 +1,17 @@
+{
+    "Characters": {
+        "Maxium": 10,
+        "Minium": 1
+    },
+
+    "Containers": {
+        "Letters": true,
+        "Numbers": true,
+        "Symbols": true
+    },
+
+    "Extra": {
+        "Generate_many_passwords": true,
+        "How_many_passwords": 50
+    }
+}

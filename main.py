@@ -3,14 +3,14 @@ import json
 import random
 import string
 
+# HI! ;)
+
 try:
     import colorama
 except ModuleNotFoundError:
     os.system("pip install colorama")
 
 colorama.init()
-
-
 
 config = json.load(open("config.json"))
 max_characters = int(config["Characters"]["Maxium"])
@@ -54,13 +54,13 @@ json_config()
 def main():
     if generate_many_password == True:
         print(colorama.Fore.MAGENTA + "-----------------------\n "
-        + colorama.Fore.RED + " Generador de Contraseñas: \n "
+        + colorama.Fore.RED + " Results: \n "
         + colorama.Fore.CYAN + " Check the file passwords.txt"
         + colorama.Fore.MAGENTA + "\n -----------------------")
         txtfile()
     else:
         print(colorama.Fore.MAGENTA + "-----------------------\n "
-        + colorama.Fore.RED + " Generador de Contraseñas: \n "
+        + colorama.Fore.RED + " Result: \n "
         + colorama.Fore.BLUE + " " + gen_password() 
         + colorama.Fore.MAGENTA + "\n -----------------------")
 
